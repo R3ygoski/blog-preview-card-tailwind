@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'lightyellow': '#f4d04e',
+            'lightgray': '#808080',
+            'darkblue': '#3e52a3',
+          },
+          fontFamily: {
+            'figtree': ['Figtree', 'sans-serif'],
+          },
+          boxShadow: {
+            'fullblack': '9px 9px 0px rgba(0, 0, 0, 1)',
+            'fullblack-lg': '15px 13px 0px rgba(0, 0, 0, 1)'
+          }
+        }
+      }
+    }
+  </script>
+  <title>Frontend Mentor | Blog preview card</title>
+</head>
+
+<body class="relative flex justify-center items-center min-h-screen bg-lightyellow font-figtree">
+  <section class="shadow-fullblack flex flex-col rounded-2xl border-2 border-black h-4/6 w-96 bg-white p-6 gap-3 hover:shadow-fullblack-lg transition">
+    <figure>
+      <img class="rounded-xl" src="./images/illustration-article.svg" alt="Illustration Article Image">
+    </figure>
+    <h2
+      class="bg-lightyellow inline-flex items-center justify-center w-20 h-8 font-bold text-center mt-4 mb-2 rounded-lg px-12">
+      Learning</h2>
+    <h3>Published 21 Dec 2023</h3>
+    <h1 class="text-xl font-extrabold cursor-pointer hover:text-lightyellow transition">HTML & CSS foundations</h1>
+    <p class="text-lightgray">These languages are the backbone of every website, defining structure, content, and
+      presentation.</p>
+    <div class="flex items-center">
+      <img class="w-10" src="./images/image-avatar.webp" alt="User Avatar">
+      <p class="ml-4 font-bold">Greg Hooper</p>
+    </div>
+  </section>
+
+  <footer class="text-xs text-center absolute bottom-0">
+    Challenge by <a class="text-darkblue" href="https://www.frontendmentor.io?ref=challenge" target="_blank" rel="noopener">Frontend Mentor</a>.
+    Coded by <a class="text-darkblue" href="#">R3ygoski</a>.
+  </footer>
+</body>
